@@ -44,10 +44,17 @@ $path: "/public/images/";
     min-height: 73px;
     padding-top: 37px;
 }
-
-#global-header-bar {
+#global-header-bar,
+.copyright,
+.open-government-licence {
   display: none;
 }
+#footer,
+#footer .footer-wrapper {
+  background: #009B67;
+  border-top: 0;
+}
+
 @media (min-width: 769px) {
   #global-header.with-proposition .header-wrapper .header-proposition {
     width: 40%;
