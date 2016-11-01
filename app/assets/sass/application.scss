@@ -9,6 +9,10 @@ $path: "/public/images/";
 // Take a look at in app/assets/sass/patterns/ to see which files are imported.
 @import 'patterns/check-your-answers';
 
+// Override the govuk_frontend_toolkit's font stack
+// https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_font_stack.scss#L13
+$toolkit-font-stack: $Helvetica-Regular;
+
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
 .govuk-related-items {
@@ -29,6 +33,11 @@ $path: "/public/images/";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+* {
+
+    font-family: $toolkit-font-stack !important;
+  }
+
 #global-header,
 #global-header .header-wrapper {
   background: #dad6bc;
@@ -47,7 +56,7 @@ $path: "/public/images/";
 #global-header-bar,
 .copyright,
 .open-government-licence {
-  display: none;
+  display: none !important;
 }
 #footer,
 #footer .footer-wrapper {
