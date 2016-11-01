@@ -4,10 +4,10 @@
 
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
-  serviceName: 'Service name goes here',
+  serviceName: '',
 
   // Default port that prototype runs on
-  port: '3000',
+  port: '8080',
 
   // Enable or disable password protection on production
   useAuth: 'true',
@@ -19,6 +19,6 @@ module.exports = {
   useHttps: 'true',
 
   // Cookie warning - update link to service's cookie page.
-  cookieText: 'GOV.UK uses cookies to make the site simpler. <a href="#" title="Find out more about cookies">Find out more about cookies</a>'
+  cookieText: ''
 
 }
