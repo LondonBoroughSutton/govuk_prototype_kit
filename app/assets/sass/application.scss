@@ -63,7 +63,28 @@ $toolkit-font-stack: $Helvetica-Regular;
   background: #009B67;
   border-top: 0;
 }
+.footer-admin { 
+  font-size: 16px;
+  color: #fff; 
+  padding-top: 2em;
+  margin-left: 10em;
+}
+#footer a { 
+ color: #fff; 
+}
+.footer-meta-inner img {
+  float: left;
+}
+#global-header #logo:hover,
+#global-header #logo:focus {
+  border-bottom-color: transparent;
+}
 
+@media (min-width: 641px) {
+  #footer .footer-meta .footer-meta-inner {
+      width: 100%;
+  }
+}
 @media (min-width: 769px) {
   #global-header.with-proposition .header-wrapper .header-proposition {
     width: 40%;
